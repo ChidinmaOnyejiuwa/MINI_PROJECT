@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Lets Sign You In"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomenote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back,"
+        android:textSize="30dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"/>
+
+    <TextView
+        android:id="@+id/missed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="You have been missed"
+        android:textSize="30dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomenote"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="100dp"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:text="Email,Phone &amp; Username"
+        android:textColor="#CFC9C9"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/missed"/>
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColor="#CFC9C9"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"/>
+
+    <TextView
+        android:id="@+id/ForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:hint="forgot"
+        android:inputType="textPersonName"
+        android:text="Forgot Password?"
+        android:textColor="#0B0A0A"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:backgroundTint="#06D5EF"
+        android:gravity="center_horizontal"
+        android:text="Sign in"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:hint="text"
+        android:text="or"
+        android:textColor="#0B0A0A"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin"/>
+
+    <ImageView
+        android:id="@+id/profile1"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:src="@drawable/facebook1"
+        app:layout_constraintTop_toBottomOf="@id/or"
+        app:layout_constraintYop_toTopOf="@id/or"
+        app:layout_editor_absoluteX="160dp"/>
+
+
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/google"
+        app:layout_constraintTop_toTopOf="@id/or"
+        tools:layout_editor_absoluteX="40dp" />
+
+    <ImageView
+        android:id="@+id/profile3"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/apple"
+        app:layout_constraintTop_toTopOf="@id/or"
+        tools:layout_editor_absoluteX="250dp" />
+
+    <Button
+        android:id="@+id/HaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Don't have an account? Register Now"
+        android:textColor="#CDC8C8"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/profile3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
