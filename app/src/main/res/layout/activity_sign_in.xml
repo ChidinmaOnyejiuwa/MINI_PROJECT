@@ -93,11 +93,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="240dp"
-        android:backgroundTint="#06D5EF"
+        android:backgroundTint="#6D64FF"
         android:gravity="center_horizontal"
         android:text="Sign in"
         android:textColor="#ffffff"
         android:textSize="30dp"
+        android:paddingHorizontal="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>

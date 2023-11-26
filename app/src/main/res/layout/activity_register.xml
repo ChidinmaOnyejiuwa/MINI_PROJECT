@@ -103,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"
-        android:backgroundTint="#06D5EF"
+        android:backgroundTint="#6D64FF"
         android:gravity="center"
         android:text="Sign up"
         android:paddingHorizontal="100dp"
