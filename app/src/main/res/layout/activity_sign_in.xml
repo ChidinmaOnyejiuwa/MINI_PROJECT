@@ -112,7 +112,6 @@
         android:gravity="center"
         android:hint="text"
         android:text="or"
-
         android:textColor="#0B0A0A"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
